@@ -1,18 +1,47 @@
-<<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title></title>
+</head>
+<body>
+  <main>
     <header>
-
+      <h1>Inscreva-se</h1>
+      <section>
+        <p>Faça parte desse time se inscrevendo na próxima edição do programa de bolsas.</p>
+        <label>Nome completo</label>
+        <input></input>
+        <label>Email</label>
+        <input placeholder="seu@email.com"></input>
+        <botton type="submit>"Faça parte</botton>
+        <div>
+          <label for="Disponibilidade">Maior Disponibilidade<br></label>
+          <input name="ativo" type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false){document.getElementById('titulo').disabled=true}"/>manha
+          <input name="ativo" type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false){document.getElementById('titulo').disabled=true}"/>noite
+          <input name="ativo" type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false){document.getElementById('titulo').disabled=true}"/>tarde
+          <input name="ativo" type="radio" class="form_1" value="S" onclick="if(document.getElementById('titulo').disabled==true){document.getElementById('titulo').disabled=false}"/>personalizar
+          <input name="titulo" id="titulo" type="text"  size="25" maxlength="40" disabled="disabled"/>
+        </div>
+        <h2>Interesses</h2>
+        <input type="checkbox">IA</input>
+        <input type="checkbox">Big Data</input>
+        <input type="checkbox">Machine Learning</input>
+        <input type="checkbox">Outros</input>
+        <input type="text"></input>
+        <h2>Por que você quer participar?</h2>
+        <textarea name="participe" rows="5" cols="50" placeholder="Digite aqui sua mensagem"></textarea><br>
+        <button>ENVIAR SUA MENSAGEM</button>
+      </section>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-  </body>
+  </main>
+  <footer>
+    <h1>Compasso Tecnologia LTDA.</h1>
+    <ol>
+      <li><a href="">Contato</a></li>
+      <li><a href="">Sobre</a></li>
+      <li><a href="">Link</a></li>
+    </ol>
+  </footer>
+</body>
 </html>
