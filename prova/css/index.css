@@ -1,6 +1,6 @@
 .botao-index {
   font-size: 1.25em;
-  background-color: blue;
+  background-color: #0A355F;
   color: #FFF;
   padding: .5em;
   width: 40ch;
@@ -31,7 +31,7 @@
 }
 .botao-index2:focus,
 .botao-index2:hover {
-    background-color: black;
+    background-color: #0A355F;
     color: white;
     box-shadow: 0 0 1em #FA9;
 }
