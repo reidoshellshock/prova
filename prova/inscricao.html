@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans|Open+Sans+Condensed:300|Shadows+Into+Light" rel="stylesheet">
   <meta charset="UTF-8"/>
-  <title></title>
+  <title> </title>
+  <link rel="stylesheet" type="text/css" href="css/inscricao.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans|Open+Sans+Condensed:300|Shadows+Into+Light" rel="stylesheet">
+  <title>Compasso Labs</title>
+  <link rel="shortcut icon" href="img/favicon.jpg">
 </head>
 <body>
   <main>
-    <header>
-      <h1>Inscreva-se</h1>
-      <section>
-        <p>Faça parte desse time se inscrevendo na próxima edição do programa de bolsas.</p>
-        <label>Nome completo</label>
-        <input></input>
-        <label>Email</label>
-        <input placeholder="seu@email.com"></input>
-        <botton type="submit>"Faça parte</botton>
-        <div>
-          <label for="Disponibilidade">Maior Disponibilidade<br></label>
-          <input name="ativo" type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false){document.getElementById('titulo').disabled=true}"/>manha
-          <input name="ativo" type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false){document.getElementById('titulo').disabled=true}"/>noite
-          <input name="ativo" type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false){document.getElementById('titulo').disabled=true}"/>tarde
-          <input name="ativo" type="radio" class="form_1" value="S" onclick="if(document.getElementById('titulo').disabled==true){document.getElementById('titulo').disabled=false}"/>personalizar
-          <input name="titulo" id="titulo" type="text"  size="25" maxlength="40" disabled="disabled"/>
-        </div>
-        <h2>Interesses</h2>
-        <input type="checkbox">IA</input>
-        <input type="checkbox">Big Data</input>
-        <input type="checkbox">Machine Learning</input>
-        <input type="checkbox">Outros</input>
-        <input type="text"></input>
-        <h2>Por que você quer participar?</h2>
-        <textarea name="participe" rows="5" cols="50" placeholder="Digite aqui sua mensagem"></textarea><br>
-        <button>ENVIAR SUA MENSAGEM</button>
-      </section>
-    </header>
+    <h1 class="inscreva"> Inscreva-se </h1>
   </main>
-  <footer>
-    <h1>Compasso Tecnologia LTDA.</h1>
-    <ol>
-      <li><a href="">Contato</a></li>
-      <li><a href="">Sobre</a></li>
-      <li><a href="">Link</a></li>
-    </ol>
-  </footer>
+  <header class="principal">
+  <form>
+    <legend>Faça parte desse time se inscrevendo na próxima edição do programa de bolsas.</legend><br>
+    <label for="nome">Nome completo</label>
+    <input type="text" name="nome"> </input>
+    <label> Email </label><br>
+    <input type="email" placeholder="seu@email.com"> </input>
+    <div>
+            <h2>Maior Disponibilidade<br></h2>
+            <input name="ativo" type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false){document.getElementById('titulo').disabled=true}"/>manha
+            <input name="ativo" type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false){document.getElementById('titulo').disabled=true}"/>noite
+            <input name="ativo" type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false){document.getElementById('titulo').disabled=true}"/>tarde
+            <input name="ativo" type="radio" class="form_1" value="S" onclick="if(document.getElementById('titulo').disabled==true){document.getElementById('titulo').disabled=false}"/>personalizar
+            <input name="titulo" id="titulo" type="text"  size="25" maxlength="40" disabled="disabled"/>
+          </div>
+  <div>
+    <h2> Interesses </h2>
+    <input type="checkbox" name="ia"> IA </input>
+    <input type="checkbox" name="big"> Big Data </input>
+    <input type="checkbox" name="machine"> Machine Learning </input>
+    <input type="checkbox" name="outro"> Outro </input>
+    <hiden><input type="text" name="outroEscondido"> </input></hiden>
+  </div>
+    <h2> Por que você quer participar? </h2>
+    <textarea name="participe" rows="8" cols="80" placeholder="Digite aqui sua mensagem"></textarea>
+    <button type="submit" class="botao" name="enviar"> ENVIAR MENSAGEM </button>
+  </form>
+</header>
+<footer>
+  <h2 class="compassoTecnologia"> Compasso Tecnologia LTDA. </h2>
+  <ul>
+    <li><a href=""> Contato </a></li>
+    <li><a href=""> Sobre </a></li>
+    <li><a href="#"> Link </a></li>
+  </ul>
+</footer>
 </body>
 </html>

@@ -78,6 +78,15 @@ main p {
     width: 100%;
 }
 
+.titulo-rodape {
+  font-size: 70px;
+  text-align: left;
+}
+
+.link-rodape {
+  color: #6CA6CD;
+}
+
 .container {
     width: 80ch;
     margin-left: auto;
