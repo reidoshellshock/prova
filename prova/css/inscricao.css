@@ -101,13 +101,13 @@ footer a{
 }
 .botao:focus,
 .botao:hover {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     box-shadow: 0 0 1em #FA9;
 }
 
 body{
-  background-color: rgba(255, 255, 255, 0.867);
+  background-color: rgba(176, 252, 135, 0.1);
 }
 .borda-vermelha {
     border: 3px solid red;
