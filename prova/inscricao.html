@@ -18,7 +18,7 @@
     <label for="nome">Nome completo</label>
     <input required autofocus id="nome" type="text" name="nome"> </input>
     <label> Email </label><br>
-    <input required type="email" id="email" placeholder="seu@email.com" name="email"> </input>
+    <input required title="" type="email" id="email" placeholder="seu@email.com" name="email"> </input>
     <div>
             <h2>Maior Disponibilidade<br></h2>
             <input name="ativo" type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false){document.getElementById('titulo').disabled=true}"/>manha
@@ -26,7 +26,7 @@
             <input name="ativo" type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false){document.getElementById('titulo').disabled=true}"/>tarde
             <input name="ativo" type="radio" class="form_1" value="S" onclick="if(document.getElementById('titulo').disabled==true){document.getElementById('titulo').disabled=false}"/>personalizar
             <input name="titulo" id="titulo" type="text"  size="25" maxlength="40" disabled="disabled"/>
-          </div>
+    </div>
   <div>
     <h2> Interesses </h2>
     <input type="checkbox" name="ia"> IA </input>
@@ -37,7 +37,7 @@
   </div>
     <h2> Por que você quer participar? </h2>
     <textarea name="participe" rows="8" cols="80" placeholder="Digite aqui sua mensagem"></textarea>
-    <button type="submit" class="botao" name="enviar"> ENVIAR MENSAGEM </button>
+    <a href="#" type="submit" class="botao" name="enviar"> ENVIAR MENSAGEM </a>
   </form>
 </header>
 <footer>
