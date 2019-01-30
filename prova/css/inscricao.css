@@ -122,3 +122,20 @@ body{
     pointer-events: none;
     background-color: gray;
 }
+
+.formularioGugu {
+  display: none;
+  }
+
+  #formulariodps {
+    width: 50%;
+    height:600px;
+    margin-left: 25%;
+    padding-left: 1.5em;
+}
+#formulariodps a{
+    margin-left: 5%;
+}
+#formulariodps a:hover{
+  color:grey;
+}

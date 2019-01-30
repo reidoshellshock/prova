@@ -113,3 +113,13 @@ function habilita() {
     $('.botao').addClass("disable");
   }
 }
+
+function sucesso(email){
+  let formulario = $("form");
+  let formulario1 =$("#formulariodps");
+  let p = document.getElementById("campo1");
+  formulario.addClass("formularioGugu");
+  formulario1.removeClass("formularioGugu");
+  let text = email.val();
+  p.innerHTML = "Inscrição enviada. Aguarde novos detalhes em seu e-mail "+ text;
+}

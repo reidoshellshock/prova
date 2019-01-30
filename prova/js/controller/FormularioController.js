@@ -13,7 +13,7 @@ class FormularioController{
     geraInscricao(event){
       let disponibilidades = $(".disponibilidade");
       let interesse = $(".interesses");
-      
+
       event.preventDefault();
 
       for(let i=0;i < disponibilidades.length;i++){
@@ -43,6 +43,7 @@ class FormularioController{
           this.interesses,
           this.mensagem.val()
         );
+        sucesso(this.email);
       let meuJson = JSON.stringify(objeto);
 
       return console.log(meuJson);
