@@ -13,7 +13,7 @@ class FormularioController{
     geraInscricao(event){
       let disponibilidades = $(".disponibilidade");
       let interesse = $(".interesses");
-
+      
       event.preventDefault();
 
       for(let i=0;i < disponibilidades.length;i++){

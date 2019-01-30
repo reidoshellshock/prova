@@ -26,19 +26,19 @@
         <input type="radio" class="disponibilidade" name="disponibilidade" value="tarde"> tarde </input>
         <input type="radio" class="disponibilidade" name="disponibilidade" value="noite"> noite </input>
         <input type="radio" class="disponibilidade" name="disponibilidade" value="personalizar"> personalizar </input></div>
-        <input type="text" id="personalizar" hidden> </input>
+        <input type="text" id="personalizar" name="disponibilidade" hidden> </input>
     </div>
   <div>
     <h2> Interesses </h2>
-    <input type="checkbox" class="interesses" name="ia"> IA </input>
-    <input type="checkbox" class="interesses" name="big"> Big Data </input>
-    <input type="checkbox" class="interesses" name="machine"> Machine Learning </input>
-    <input type="checkbox" class="outro interesses" name="outro"> Outro </input>
+    <input type="checkbox" class="interesses" name="ia" value="IA"> IA </input>
+    <input type="checkbox" class="interesses" name="big" value="Big data"> Big Data </input>
+    <input type="checkbox" class="interesses" name="machine" value="Machine Learning"> Machine Learning </input>
+    <input type="checkbox" class="outro interesses" name="outro" value="outro"> Outro </input>
     <input type="text" class="interesseOutro" id="interesses" name="outroEscondido" hidden> </input>
   </div>
     <h2> Por que você quer participar? </h2>
     <textarea id="mensagem" class="area" name="participe" rows="8" cols="80" placeholder="Digite aqui sua mensagem"></textarea>
-    <a href="#" type="submit" class="botao disable" name="enviar"> ENVIAR MENSAGEM </a>
+    <button href="#" type="submit" class="botao disable" name="enviar"> ENVIAR MENSAGEM </button>
   </form>
 </header>
 <footer>
