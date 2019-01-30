@@ -13,7 +13,7 @@
     <h1 class="inscreva"> Inscreva-se </h1>
   </main>
   <header class="principal">
-  <form>
+  <form onsubmit="formulario.geraInscricao(event)">
     <legend>Faça parte desse time se inscrevendo na próxima edição do programa de bolsas.</legend><br>
     <label for="nome">Nome completo</label>
     <input required autofocus id="nome" type="text" name="nome"> </input>
@@ -22,10 +22,10 @@
     <div>
       <h2> Maior disponibilidade </h2>
         <div class="marcado">
-        <input type="radio" name="disponibilidade" value="manhã"> manhã </input>
-        <input type="radio" name="disponibilidade" value="tarde"> tarde </input>
-        <input type="radio" name="disponibilidade" value="noite"> noite </input>
-        <input type="radio" name="disponibilidade" value="disponibilidade"> personalizar </input></div>
+        <input type="radio" class="disponibilidade" name="disponibilidade" value="manhã"> manhã </input>
+        <input type="radio" class="disponibilidade" name="disponibilidade" value="tarde"> tarde </input>
+        <input type="radio" class="disponibilidade" name="disponibilidade" value="noite"> noite </input>
+        <input type="radio" class="disponibilidade" name="disponibilidade" value="personalizar"> personalizar </input></div>
         <input type="text" id="personalizar" hidden> </input>
     </div>
   <div>
@@ -33,11 +33,11 @@
     <input type="checkbox" class="interesses" name="ia"> IA </input>
     <input type="checkbox" class="interesses" name="big"> Big Data </input>
     <input type="checkbox" class="interesses" name="machine"> Machine Learning </input>
-    <input type="checkbox" class="outro" name="outro"> Outro </input>
-    <input type="text" id="interesses" name="outroEscondido" hidden> </input>
+    <input type="checkbox" class="outro interesses" name="outro"> Outro </input>
+    <input type="text" class="interesseOutro" id="interesses" name="outroEscondido" hidden> </input>
   </div>
     <h2> Por que você quer participar? </h2>
-    <textarea class="area" name="participe" rows="8" cols="80" placeholder="Digite aqui sua mensagem"></textarea>
+    <textarea id="mensagem" class="area" name="participe" rows="8" cols="80" placeholder="Digite aqui sua mensagem"></textarea>
     <a href="#" type="submit" class="botao disable" name="enviar"> ENVIAR MENSAGEM </a>
   </form>
 </header>
@@ -51,5 +51,10 @@
 </footer>
 <script src="js/jquery.js"></script>
 <script src="js/validacao.js"></script>
+<script src="js/models/InscricaoForm.js"></script>
+<script src="js/controller/FormularioController.js"></script>
+<script type="text/javascript">
+  let formulario = new FormularioController();
+</script>
 </body>
 </html>

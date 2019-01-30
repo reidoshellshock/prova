@@ -61,7 +61,6 @@ outro.on("click", function(){
   interesses = true;
   habilita();
   if(outro.is(":checked") == true) {
-    console.log(outro);
     $("#interesses").attr("hidden", false);
   } else {
     $("#interesses").attr("hidden", true);
@@ -73,8 +72,8 @@ let disponibilidade = $("input[type='radio']");
 disponibilidade.on("click", function() {
   turno = true;
   habilita();
-  if ($(this).val() == "disponibilidade") {
-    console.log(($(this).val()));
+  if ($(this).val() == "personalizar") {
+
 
     $("#personalizar").attr("hidden", false);
     return;
